@@ -1,5 +1,5 @@
-import './inicial.css'
-import '../index.css'
+import './Inicial.css'
+
 
 function Inicial() {
 

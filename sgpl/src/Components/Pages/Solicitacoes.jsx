@@ -16,7 +16,7 @@ const Solicitacoes = () => {
         { date: "12/09/2024", description: "Problemas com a fonte de alimentação", link: "0007.html", color: "vermelho" },
         { date: "12/09/2024", description: "Teclado quebrado", link: "0008.html", color: "verde" },
       ].map((item, index) => (
-        <div key={index} className={`card ${item.color}`}>
+        <div key={index} className={`card1 ${item.color}`}>
           <p><a href={item.link}>{item.date} - {item.description}</a></p>
         </div>
       ))}

@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
-import Inicial from './Components/Inicial.jsx'
-import Login from'./Components/Pages/Login.jsx'
+import Inicial from './Components/Pages/Inicial.jsx'
+import Login from'./Components/Login.jsx'
 import Devolucoes from './Components/Pages/Devolucoes.jsx'
 import Solicitacoes from './Components/Pages/Solicitacoes'
 
@@ -11,7 +11,7 @@ import Solicitacoes from './Components/Pages/Solicitacoes'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Login />,
     children: [
       {
         path: "/Inicial",
@@ -27,12 +27,8 @@ const router = createBrowserRouter([
       },
       
     ]
-  },
+  }
 
-  {
-    path: "/Login",
-    element: <Login />
-  },
 
 ]);
 
