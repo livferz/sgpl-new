@@ -6,18 +6,16 @@ import logo from './logo.png'
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const handleSairClick = () => {
-    navigate('/login', { replace: true });
-  };
+ 
 
   return (
     <header className='header'>
       <a href='/' className='logo'><img src={logo} alt='Logo'></img></a>
       <nav className='navbar'>
-        <a href='/'>Solicitações</a>
-        <a href='/'>Devoluções</a>
-        <a href='/'>Nova Ocorrência</a>
-        <a onClick={handleSairClick}>Sair</a>
+        <a href='/Solicitacoes'>Solicitações</a>
+        <a href='/Devolucoes'>Devoluções</a>
+        <a href='/Ocorrencia'>Nova Ocorrência</a>
+        <a href='/'>Sair</a>
       </nav>
     </header>
   );

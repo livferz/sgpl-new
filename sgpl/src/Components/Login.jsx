@@ -1,18 +1,20 @@
-import  { useState } from 'react';
-import { useNavigate} from 'react-router-dom'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import logo from './logo.png';
- 
+
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
- 
+    const navigate = useNavigate(); 
+
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('Username:', username);
         console.log('Password:', password);
+        navigate('/Inicial'); 
     };
- 
+
     return (
         <div className="custom-background">
             <div className="login-container">
@@ -39,13 +41,12 @@ const Login = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <button type="submit" >Entrar</button>
+                        <button type="submit">Entrar</button>
                     </form>
                 </div>
             </div>
         </div>
-        
-    )
+    );
 }
 
-export default Login
+export default Login;

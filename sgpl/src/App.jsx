@@ -1,15 +1,18 @@
-import { Outlet } from 'react-router-dom'
-import NavBar from './Components/Navbar'
-import './index.css'
-
-
+import { Outlet, useLocation } from 'react-router-dom';
+import NavBar from './Components/Navbar';
+import './index.css';
+ 
 function App() {
+    const location = useLocation();
+ 
     return (
         <div>
-                <NavBar/>
-                    <Outlet />
+           
+            {location.pathname !== '/' && <NavBar />} 
+            <Outlet /> 
         </div>
-    )
+    );
 }
-
-export default App
+ 
+export default App;
+ 
