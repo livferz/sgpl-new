@@ -7,7 +7,7 @@ import Login from'./Components/Login.jsx'
 import Devolucoes from './Components/Pages/Devolucoes.jsx'
 import Solicitacoes from './Components/Pages/Solicitacoes'
 import Ocorrencia from './Components/Pages/Ocorrencia.jsx'
-
+import OcorrenciaDetails from './Components/Pages/OcorrenciaDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,7 +33,15 @@ const router = createBrowserRouter([
       {
         path: "/Ocorrencia",
         element: <Ocorrencia/>
-      },
+      }, 
+      {
+        path: "/OcorrenciaDetails",
+        element: <OcorrenciaDetails/>
+      }, 
+      
+   
+      
+   
     ]
   }
  

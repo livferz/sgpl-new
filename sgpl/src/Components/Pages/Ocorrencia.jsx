@@ -4,10 +4,10 @@ import './Ocorrencia.css';
 const Ocorrencia = () => {
     const [formData, setFormData] = useState({
         ocorrencia: '',
-        rmProfessor: '',
+        rm: '',
         data: '',
         periodo: 'Noturno',
-        laboratorio: '',
+        lab: '',
         andar: '',
         maquina: '',
         prioridade: 'Urgente',
@@ -23,9 +23,9 @@ const Ocorrencia = () => {
     };
 
     const confirmarEnvio = () => {
-        const { ocorrencia, rmProfessor, data, periodo, laboratorio, andar, maquina, descricao } = formData;
+        const { ocorrencia, rm, data, periodo, lab, andar, maquina, descricao } = formData;
 
-        if (!ocorrencia || !rmProfessor || !data || !periodo || !laboratorio || !andar || !maquina || !descricao) {
+        if (!ocorrencia || !rm || !data || !periodo || !lab || !andar || !maquina || !descricao) {
             alert('Por favor, preencha todos os campos obrigatórios.');
             return;
         }
@@ -36,7 +36,7 @@ const Ocorrencia = () => {
     };
 
     return (
-        <div className="container">
+        <div className="cont">
             <h1>NOVA OCORRÊNCIA</h1>
             <h2>
                 <input 
@@ -48,13 +48,13 @@ const Ocorrencia = () => {
                 />
             </h2>
             <br/>
-            <div className="details">
+            <div className="det">
                 <p>
                     <strong>RM Professor :</strong>
                     <input 
                         type="number" 
-                        name="rmProfessor" 
-                        value={formData.rmProfessor} 
+                        name="rm" 
+                        value={formData.rm} 
                         onChange={handleChange} 
                         min="0" 
                     />
@@ -84,11 +84,11 @@ const Ocorrencia = () => {
                 </p>
                 <br />
                 <p>
-                    <strong>Laboratório :</strong>
+                    <strong>Lab :</strong>
                     <input 
                         type="number" 
-                        name="laboratorio" 
-                        value={formData.laboratorio} 
+                        name="lab" 
+                        value={formData.lab} 
                         onChange={handleChange} 
                         min="0" 
                     />
@@ -102,7 +102,7 @@ const Ocorrencia = () => {
                         min="0" 
                     />
                     &nbsp;&nbsp;&nbsp;
-                    <strong>Máquina :</strong>
+                    <strong>Máq :</strong>
                     <input 
                         type="number" 
                         name="maquina" 

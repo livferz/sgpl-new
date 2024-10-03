@@ -1,107 +1,49 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Outfit', sans-serif;
 }
 
-
- 
-.card5 {
+.cont {
     padding: 30px;
-    max-width: 1200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(73, 73, 73, 0.5);
-    text-align: left;
-    margin: 30px auto;
-}
- 
-.container {
-    padding: 30px;
-    height: auto;
-    width: 100%;
     max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(76, 240, 0, 0.452);
     text-align: left;
     margin: 20px auto;
-    margin-top: 30px;
 }
- 
+
 h1 {
     color: #000;
     font-size: 25px;
     margin-bottom: 10px;
-    margin-left: 2px;
 }
- 
+
 h2 {
     color: #000;
     font-size: 23px;
     margin-bottom: 5px;
 }
- 
-.rm-number {
-    color: #a0a0a0;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
- 
-.details {
+
+.det {
     font-size: 16px;
     margin-bottom: 20px;
 }
- 
-.linkenviar {
-    text-decoration: none;
+
+button {
+    padding: 4px 10px; 
+    border: 2px solid #c0c0c0;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
- 
 
-form {
-    display: flex;
-    justify-content: center; 
-    margin-top: 20px; 
-}
- 
-
-    .enviar {
-        padding: 4px 10px; 
-        border: 2px solid #c0c0c0;
-        border-radius: 20px;
-        background-color: #fff;
-        color: #000;
-        margin-top: 20px;
-        margin-left:900px;
-        font-size: 12px; 
-        text-decoration: inherit;
-        text-align: center;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        cursor: pointer; 
-        width: 80px;
-    }
-
-    .enviar a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
- 
-
- 
-.enviar:hover {
+button:hover {
     background-color: #f0f0f0;
     color: #000;
 }
- 
- 
-.descricao {
-    color: #939393;
-}
- 
-.descricao1 {
-    color: #939393;
-}
- 
-
